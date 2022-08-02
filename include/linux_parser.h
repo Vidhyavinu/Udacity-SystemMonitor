@@ -18,8 +18,9 @@ const std::string kVersionFilename{"/version"};
 const std::string kOSPath{"/etc/os-release"};
 const std::string kPasswordPath{"/etc/passwd"};
   
-const std::string procs_running{"procs_running"};
-const std::string processes{"processes"};
+const std::string procs_running("procs_running");
+const std::string processes("processes");
+const std::string filterProcMem("VmRSS:");
   
 // System
 float MemoryUtilization();

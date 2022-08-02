@@ -23,7 +23,9 @@ class Process {
   
   // TODO: Declare any necessary private members
  private:
-  
+
+  float m_utilization;
+
 };
 
 #endif
