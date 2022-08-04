@@ -27,7 +27,8 @@ vector<Process>& System::Processes()
   for (const int& pidint : pids) 
   {
     Process p(pidint);
-	if(!p.Ram().empty())
+	if(!p.Ram().empty() && !p.Command().empty() &&
+      p.UpTime()!=0 && !p.User().empty() && p.CpuUtilization()!=0.0)
     	processes_.emplace_back(pidint);
   }
   

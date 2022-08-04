@@ -147,8 +147,7 @@ long LinuxParser::ActiveJiffies(int pid)
         stream.close();
   	}
   	
-
-    if (vstr.size() >= 21)
+	if (vstr.size() >= 21)
     	return (stol(vstr[13]) + stol(vstr[14]) + stol(vstr[15]) + 					stol(vstr[16]));
 
   	return 0;
